@@ -1,7 +1,7 @@
 <script setup lang="ts">
-// in .vue components or .md pages:
-// named import "data" is the resolved static data
-// can also import types for type consistency
+// .vue bileşenlerinde veya .md sayfalarında:
+// "data" adlı named import statik veriyi çözümler
+// ayrıca tür tutarlılığı için türler de içe aktarılabilir
 import { data as apiIndex, APIGroup } from './api.data'
 import { ref, computed, onMounted } from 'vue'
 import { withBase } from 'vitepress'
@@ -20,23 +20,23 @@ const filtered = computed(() => {
 
   return apiIndex
     .map((section) => {
-      // section title match
+      // bölüm başlığı eşleşmesi
       if (matches(section.text)) {
         return section
       }
 
-      // filter groups
+      // grupları filtrele
       const matchedGroups = section.items
         .map((item) => {
-          // group title match
+          // grup başlığı eşleşmesi
           if (matches(item.text)) {
             return item
           }
-          // ssr special case
+          // ssr özel durumu
           if (q.includes('ssr') && item.text.startsWith('Server')) {
             return item
           }
-          // filter headers
+          // başlıkları filtrele
           const matchedHeaders = item.headers.filter(
             ({ text, anchor }) => matches(text) || matches(anchor)
           )
@@ -57,13 +57,13 @@ const filtered = computed(() => {
 <template>
   <div id="api-index">
     <div class="header">
-      <h1>API Reference</h1>
+      <h1>API Referansı</h1>
       <div class="api-filter">
-        <label for="api-filter">Filter</label>
+        <label for="api-filter">Filtrele</label>
         <input
           ref="search"
           type="search"
-          placeholder="Enter keyword"
+          placeholder="Anahtar kelime girin"
           id="api-filter"
           v-model="query"
         />
@@ -93,7 +93,7 @@ const filtered = computed(() => {
     </div>
 
     <div v-if="!filtered.length" class="no-match">
-      No API matching "{{ query }}" found.
+      "{{ query }}" ile eşleşen API bulunamadı.
     </div>
   </div>
 </template>

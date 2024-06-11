@@ -2,13 +2,13 @@
 footer: false
 ---
 
-# Introduction {#introduction}
+# Giriş {#introduction}
 
-:::info You are reading the documentation for Vue 3!
+:::info Vue 3 dokümantasyonunu okuyorsunuz!
 
-- Vue 2 support has ended on **Dec 31, 2023**. Learn more about [Vue 2 EOL](https://v2.vuejs.org/eol/).
-- Upgrading from Vue 2? Check out the [Migration Guide](https://v3-migration.vuejs.org/).
-  :::
+- Vue 2 desteği **31 Aralık 2023** tarihinde sona erdi. Daha fazla bilgi için [Vue 2 EOL](https://v2.vuejs.org/eol/) sayfasını inceleyin.
+- Vue 2'den mi yükseltiyorsunuz? [Geçiş Rehberi](https://v3-migration.vuejs.org/) inceleyin.
+:::
 
 <style src="@theme/styles/vue-mastery.css"></style>
 <div class="vue-mastery-link">
@@ -16,18 +16,18 @@ footer: false
     <div class="banner-wrapper">
       <img class="banner" alt="Vue Mastery banner" width="96px" height="56px" src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vuemastery-graphical-link-96x56.png" />
     </div>
-    <p class="description">Learn Vue with video tutorials on <span>VueMastery.com</span></p>
+    <p class="description">Vue'yu <span>VueMastery.com</span> üzerinden video eğitimleriyle öğrenin</p>
     <div class="logo-wrapper">
         <img alt="Vue Mastery Logo" width="25px" src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vue-mastery-logo.png" />
     </div>
   </a>
 </div>
 
-## What is Vue? {#what-is-vue}
+## Vue Nedir? {#what-is-vue}
 
-Vue (pronounced /vjuː/, like **view**) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.
+Vue (telaffuz: /vjuː/, **view** gibi) kullanıcı arayüzleri oluşturmak için bir JavaScript çerçevesidir. Standart HTML, CSS ve JavaScript üzerine kurulur ve herhangi bir karmaşıklıkta kullanıcı arayüzlerini verimli bir şekilde geliştirmenize yardımcı olan beyan edici, bileşen tabanlı bir programlama modeli sağlar.
 
-Here is a minimal example:
+İşte minimal bir örnek:
 
 <div class="options-api">
 
@@ -41,6 +41,7 @@ createApp({
     }
   }
 }).mount('#app')
+
 ```
 
 </div>
@@ -68,7 +69,7 @@ createApp({
 </div>
 ```
 
-**Result**
+**Çıktı**
 
 <script setup>
 import { ref } from 'vue'
@@ -81,38 +82,39 @@ const count = ref(0)
   </button>
 </div>
 
-The above example demonstrates the two core features of Vue:
+Yukarıdaki örnek, Vue'nun iki temel özelliğini göstermektedir:
 
-- **Declarative Rendering**: Vue extends standard HTML with a template syntax that allows us to declaratively describe HTML output based on JavaScript state.
+- **Beyan Edici Görselleştirme**: Vue, standart HTML'yi bir şablon sözdizimi ile genişletir ve JavaScript durumu temelinde HTML çıktısını beyan edici bir şekilde tanımlamamıza olanak tanır.
 
-- **Reactivity**: Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happen.
+- **Reaktivite**: Vue, JavaScript durum değişikliklerini otomatik olarak izler ve değişiklikler olduğunda DOM'u verimli bir şekilde günceller.
 
-You may already have questions - don't worry. We will cover every little detail in the rest of the documentation. For now, please read along so you can have a high-level understanding of what Vue offers.
+Zaten sorularınız olabilir - endişelenmeyin. Dokümantasyonun geri kalanında her küçük detayı ele alacağız. Şimdilik, Vue'nun neler sunduğuna dair genel bir anlayışa sahip olabilmeniz için okumaya devam edin.
 
-:::tip Prerequisites
-The rest of the documentation assumes basic familiarity with HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics and then come back! You can check your knowledge level with these overviews for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) if needed. Prior experience with other frameworks helps, but is not required.
+:::tip Ön Koşullar
+Dokümantasyonun geri kalanının temel HTML, CSS ve JavaScript bilgisi gerektirdiğini varsayar. Ön uç geliştirmeye tamamen yeniyseniz, ilk adım olarak doğrudan bir çerçeveye atlamak en iyi fikir olmayabilir - temelleri kavrayın ve sonra geri gelin! İhtiyaç duyduğunuzda bu [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) ve [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) özetleriyle bilgi seviyenizi kontrol edebilirsiniz. Diğer çerçevelerle daha önce deneyiminiz olması yardımcı olabilir, ancak gerekli değildir.
 :::
 
-## The Progressive Framework {#the-progressive-framework}
+## İlerleyici Çerçeve {#the-progressive-framework}
 
-Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:
+Vue, ön uç geliştirmede gereken yaygın özelliklerin çoğunu kapsayan bir çerçeve ve ekosistemdir. Ancak web oldukça çeşitlidir - web üzerinde inşa ettiğimiz şeyler biçim ve ölçek açısından büyük farklılıklar gösterebilir. Bunu göz önünde bulundurarak, Vue esnek ve kademeli olarak benimsenebilir şekilde tasarlanmıştır. Kullanım durumunuza bağlı olarak Vue'yu farklı şekillerde kullanabilirsiniz:
 
-- Enhancing static HTML without a build step
-- Embedding as Web Components on any page
-- Single-Page Application (SPA)
-- Fullstack / Server-Side Rendering (SSR)
-- Jamstack / Static Site Generation (SSG)
-- Targeting desktop, mobile, WebGL, and even the terminal
+- Derleme adımı olmadan statik HTML'yi geliştirme
+- Herhangi bir sayfaya Web Bileşenleri olarak gömme
+- Tek Sayfa Uygulaması (SPA)
+- Tam yığın / Sunucu Tarafı Oluşturma (SSR)
+- Jamstack / Statik Site Oluşturma (SSG)
+- Masaüstü, mobil, WebGL ve hatta terminali hedefleme
 
-If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.
+Bu kavramları göz korkutucu buluyorsanız endişelenmeyin! Eğitim ve rehber, yalnızca temel HTML ve JavaScript bilgisi gerektirir ve bu konularda uzman olmadan takip edebilirsiniz.
 
-If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious about what these terms mean, we discuss them in more detail in [Ways of Using Vue](/guide/extras/ways-of-using-vue).
+Eğer deneyimli bir geliştiriciyseniz ve Vue'yu yığınıza nasıl en iyi şekilde entegre edeceğinizi öğrenmek istiyorsanız veya bu terimlerin ne anlama geldiğini merak ediyorsanız, bunları [Vue'nun Kullanım Yolları](/guide/extras/ways-of-using-vue) bölümünde daha ayrıntılı olarak ele alıyoruz.
 
-Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The Progressive Framework": it's a framework that can grow with you and adapt to your needs.
+Esnekliğine rağmen, Vue'nun nasıl çalıştığına dair temel bilgiler tüm bu kullanım durumlarında ortaktır. Şu anda sadece bir acemi olsanız bile, yol boyunca edindiğiniz bilgiler daha iddialı hedeflerle başa çıkmak için büyüdükçe faydalı olmaya devam edecektir. Eğer bir veteranseniz, çözülemeye çalıştığınız sorunlara göre Vue'yu en uygun şekilde kullanabilir ve aynı verimliliği koruyabilirsiniz. Bu yüzden Vue'ya "İlerleyici Çerçeve" diyoruz: ihtiyaçlarınıza göre büyüyebilen ve uyum sağlayabilen bir çerçeve.
 
-## Single-File Components {#single-file-components}
+## Tek Dosyalık Bileşenler {#single-file-components}
 
-In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called **Single-File Component** (also known as `*.vue` files, abbreviated as **SFC**). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
+Çoğu derleme aracı etkinleştirilmiş Vue projelerinde, Vue bileşenlerini **Tek Dosyalık Bileşen** (aynı zamanda `*.vue` dosyaları olarak da bilinir, kısaca **SFC**) olarak adlandırılan HTML benzeri bir dosya formatı kullanarak yazarız. Adından da anlaşılacağı gibi, bir Vue SFC, bileşenin mantığını (JavaScript), şablonunu (HTML) ve stillerini (CSS) tek bir dosyada kapsüller. İşte önceki örneğin, SFC formatında yazılmış hali:
+
 
 <div class="options-api">
 
@@ -160,48 +162,47 @@ button {
 
 </div>
 
-SFC is a defining feature of Vue and is the recommended way to author Vue components **if** your use case warrants a build setup. You can learn more about the [how and why of SFC](/guide/scaling-up/sfc) in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
+SFC, Vue'nun belirleyici bir özelliğidir ve kullanım durumunuz bir derleme kurulumu gerektiriyorsa Vue bileşenlerini yazmanın önerilen yoludur. [SFC'nin nasıl ve nedenini](/guide/scaling-up/sfc) kendi bölümünde daha fazla öğrenebilirsiniz - ancak şimdilik, Vue'nun tüm derleme araçlarını sizin için ayarlayacağını bilin.
 
-## API Styles {#api-styles}
+## API Stilleri {#api-styles}
 
-Vue components can be authored in two different API styles: **Options API** and **Composition API**.
+Vue bileşenleri iki farklı API stilinde yazılabilir: **Options API** ve **Composition API**.
 
 ### Options API {#options-api}
 
-With Options API, we define a component's logic using an object of options such as `data`, `methods`, and `mounted`. Properties defined by options are exposed on `this` inside functions, which points to the component instance:
+Options API ile, bir bileşenin mantığını `data`, `methods` ve `mounted` gibi seçenekler içeren bir nesne kullanarak tanımlarız. Seçenekler tarafından tanımlanan özellikler, fonksiyonlar içinde bileşen örneğini işaret eden `this` üzerinde erişilebilir hale gelir:
 
 ```vue
 <script>
 export default {
-  // Properties returned from data() become reactive state
-  // and will be exposed on `this`.
+  // data() fonksiyonundan döndürülen özellikler reaktif durum haline gelir
+  // ve `this` üzerinde erişilebilir olur.
   data() {
     return {
       count: 0
     }
   },
 
-  // Methods are functions that mutate state and trigger updates.
-  // They can be bound as event handlers in templates.
+  // Methods, durumu değiştiren ve güncellemeleri tetikleyen fonksiyonlardır.
+  // Şablonlarda olay işleyicisi olarak bağlanabilirler.
   methods: {
     increment() {
       this.count++
     }
   },
 
-  // Lifecycle hooks are called at different stages
-  // of a component's lifecycle.
-  // This function will be called when the component is mounted.
+  // Yaşam döngüsü kancaları, bir bileşenin yaşam döngüsünün
+  // farklı aşamalarında çağrılır.
+  // Bu fonksiyon bileşen monte edildiğinde çağrılacaktır.
   mounted() {
-    console.log(`The initial count is ${this.count}.`)
+    console.log(`Başlangıç sayısı ${this.count}.`)
   }
 }
 </script>
 
 <template>
-  <button @click="increment">Count is: {{ count }}</button>
+  <button @click="increment">Sayı: {{ count }}</button>
 </template>
-```
 
 [Try it in the Playground](https://play.vuejs.org/#eNptkMFqxCAQhl9lkB522ZL0HNKlpa/Qo4e1ZpLIGhUdl5bgu9es2eSyIMio833zO7NP56pbRNawNkivHJ25wV9nPUGHvYiaYOYGoK7Bo5CkbgiBBOFy2AkSh2N5APmeojePCkDaaKiBt1KnZUuv3Ky0PppMsyYAjYJgigu0oEGYDsirYUAP0WULhqVrQhptF5qHQhnpcUJD+wyQaSpUd/Xp9NysVY/yT2qE0dprIS/vsds5Mg9mNVbaDofL94jZpUgJXUKBCvAy76ZUXY53CTd5tfX2k7kgnJzOCXIF0P5EImvgQ2olr++cbRE4O3+t6JxvXj0ptXVpye1tvbFY+ge/NJZt)
 
@@ -234,49 +235,50 @@ onMounted(() => {
 </template>
 ```
 
-[Try it in the Playground](https://play.vuejs.org/#eNpNkMFqwzAQRH9lMYU4pNg9Bye09NxbjzrEVda2iLwS0spQjP69a+yYHnRYad7MaOfiw/tqSliciybqYDxDRE7+qsiM3gWGGQJ2r+DoyyVivEOGLrgRDkIdFCmqa1G0ms2EELllVKQdRQa9AHBZ+PLtuEm7RCKVd+ChZRjTQqwctHQHDqbvMUDyd7mKip4AGNIBRyQujzArgtW/mlqb8HRSlLcEazrUv9oiDM49xGGvXgp5uT5his5iZV1f3r4HFHvDprVbaxPhZf4XkKub/CDLaep1T7IhGRhHb6WoTADNT2KWpu/aGv24qGKvrIrr5+Z7hnneQnJu6hURvKl3ryL/ARrVkuI=)
+[Test Ortamında Kodları Deneyin](https://play.vuejs.org/#eNpNkMFqwzAQRH9lMYU4pNg9Bye09NxbjzrEVda2iLwS0spQjP69a+yYHnRYad7MaOfiw/tqSliciybqYDxDRE7+qsiM3gWGGQJ2r+DoyyVivEOGLrgRDkIdFCmqa1G0ms2EELllVKQdRQa9AHBZ+PLtuEm7RCKVd+ChZRjTQqwctHQHDqbvMUDyd7mKip4AGNIBRyQujzArgtW/mlqb8HRSlLcEazrUv9oiDM49xGGvXgp5uT5his5iZV1f3r4HFHvDprVbaxPhZf4XkKub/CDLaep1T7IhGRhHb6WoTADNT2KWpu/aGv24qGKvrIrr5+Z7hnneQnJu6hURvKl3ryL/ARrVkuI=)
 
-### Which to Choose? {#which-to-choose}
+### Hangisini Seçmeli? {#which-to-choose}
 
-Both API styles are fully capable of covering common use cases. They are different interfaces powered by the exact same underlying system. In fact, the Options API is implemented on top of the Composition API! The fundamental concepts and knowledge about Vue are shared across the two styles.
+Her iki API stili de yaygın kullanım senaryolarını tam olarak kapsayabilir. Aslında, Options API, Composition API üzerine kuruludur! Vue hakkındaki temel kavramlar ve bilgiler iki stil arasında ortaktır.
 
-The Options API is centered around the concept of a "component instance" (`this` as seen in the example), which typically aligns better with a class-based mental model for users coming from OOP language backgrounds. It is also more beginner-friendly by abstracting away the reactivity details and enforcing code organization via option groups.
+Options API, bir "bileşen örneği" (`this` örnekte görüldüğü gibi) kavramı etrafında toplanır, bu da tipik olarak OOP (Nesne Yönelimli Programlama) dili geçmişine sahip kullanıcılar için daha sınıf tabanlı bir zihinsel modelle daha iyi uyum sağlar. Ayrıca reaktivite detaylarını soyutlayarak ve seçenek grupları aracılığıyla kod organizasyonunu zorunlu kılarak daha yeni başlayan dostudur.
 
-The Composition API is centered around declaring reactive state variables directly in a function scope and composing state from multiple functions together to handle complexity. It is more free-form and requires an understanding of how reactivity works in Vue to be used effectively. In return, its flexibility enables more powerful patterns for organizing and reusing logic.
+Composition API, reaktif durum değişkenlerini doğrudan bir fonksiyon kapsamında beyan etme ve karmaşıklığı yönetmek için birden fazla fonksiyondan durumu birleştirme etrafında toplanır. Daha serbest formdadır ve Vue'da reaktivitenin nasıl çalıştığını anlamayı gerektirir. Buna karşılık, esnekliği mantığı organize etmek ve yeniden kullanmak için daha güçlü desenler sağlar.
 
-You can learn more about the comparison between the two styles and the potential benefits of Composition API in the [Composition API FAQ](/guide/extras/composition-api-faq).
+İki stil arasındaki karşılaştırmayı ve Composition API'nin potansiyel faydalarını [Composition API SSS](/guide/extras/composition-api-faq) bölümünde daha fazla öğrenebilirsiniz.
 
-If you are new to Vue, here's our general recommendation:
+Vue'ya yeniyseniz, işte genel önerimiz:
 
-- For learning purposes, go with the style that looks easier to understand to you. Again, most of the core concepts are shared between the two styles. You can always pick up the other style later.
+- Öğrenme amacıyla, size daha kolay anlaşılan stile gidin. Yine, temel kavramların çoğu iki stil arasında ortaktır. Diğer stili daha sonra her zaman öğrenebilirsiniz.
 
-- For production use:
+- Üretim kullanımı için:
 
-  - Go with Options API if you are not using build tools, or plan to use Vue primarily in low-complexity scenarios, e.g. progressive enhancement.
+  - Derleme araçlarını kullanmıyorsanız veya Vue'yu öncelikle düşük karmaşıklık senaryolarında kullanmayı planlıyorsanız, Options API ile devam edin, örneğin kademeli geliştirme.
 
-  - Go with Composition API + Single-File Components if you plan to build full applications with Vue.
+  - Vue ile tam uygulamalar oluşturmayı planlıyorsanız, Composition API + Tek Dosyalık Bileşenler ile devam edin.
 
-You don't have to commit to only one style during the learning phase. The rest of the documentation will provide code samples in both styles where applicable, and you can toggle between them at any time using the **API Preference switches** at the top of the left sidebar.
+Öğrenme aşamasında yalnızca bir stile bağlı kalmanız gerekmez. Dokümantasyonun geri kalanı, uygulanabilir yerlerde her iki stilde de kod örnekleri sağlayacak ve sol kenar çubuğunun üst kısmındaki **API Tercih Anahtarları** kullanarak bunlar arasında istediğiniz zaman geçiş yapabilirsiniz.
 
-## Still Got Questions? {#still-got-questions}
+## Hala Sorularınız mı Var? {#still-got-questions}
 
-Check out our [FAQ](/about/faq).
+[SSS](/about/faq) sayfamıza göz atın.
 
-## Pick Your Learning Path {#pick-your-learning-path}
+## Öğrenme Yolunuzu Seçin {#pick-your-learning-path}
 
-Different developers have different learning styles. Feel free to pick a learning path that suits your preference - although we do recommend going over all of the content, if possible!
+Farklı geliştiricilerin farklı öğrenme stilleri vardır. Tercihinize uygun bir öğrenme yolunu seçmekten çekinmeyin - mümkünse tüm içeriği gözden geçirmenizi öneririz!
 
 <div class="vt-box-container next-steps">
   <a class="vt-box" href="/tutorial/">
-    <p class="next-steps-link">Try the Tutorial</p>
-    <p class="next-steps-caption">For those who prefer learning things hands-on.</p>
+    <p class="next-steps-link">Eğitimi Deneyin</p>
+    <p class="next-steps-caption">Her şeyi uygulamalı olarak öğrenmeyi tercih edenler için.</p>
   </a>
   <a class="vt-box" href="/guide/quick-start.html">
-    <p class="next-steps-link">Read the Guide</p>
-    <p class="next-steps-caption">The guide walks you through every aspect of the framework in full detail.</p>
+    <p class="next-steps-link">Rehberi Okuyun</p>
+    <p class="next-steps-caption">Rehber, çerçevenin her yönünü ayrıntılı olarak ele alır.</p>
   </a>
   <a class="vt-box" href="/examples/">
-    <p class="next-steps-link">Check out the Examples</p>
-    <p class="next-steps-caption">Explore examples of core features and common UI tasks.</p>
+    <p class="next-steps-link">Örnekleri İnceleyin</p>
+    <p class="next-steps-caption">Ana özellikler ve yaygın UI görevlerinin örneklerini keşfedin.</p>
   </a>
 </div>
+

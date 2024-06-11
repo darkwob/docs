@@ -2,82 +2,82 @@
 outline: deep
 ---
 
-# Community Guide {#community-guide}
+# Topluluk Rehberi {#community-guide}
 
-Vue's community is growing incredibly fast and if you're reading this, there's a good chance you're ready to join it. So... welcome!
+Vue'nun topluluğu inanılmaz hızlı bir şekilde büyüyor ve bunu okuyorsanız, topluluğa katılmaya hazırsınız demektir. O halde... hoş geldiniz!
 
-Now we'll answer both what the community can do for you and what you can do for the community.
+Şimdi hem topluluğun sizin için neler yapabileceğini hem de sizin topluluk için neler yapabileceğinizi cevaplayacağız.
 
-## Resources {#resources}
+## Kaynaklar {#resources}
 
-### Code of Conduct {#code-of-conduct}
+### Davranış Kuralları {#code-of-conduct}
 
-Our [Code of Conduct](/about/coc) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
+[Davranış Kurallarımız](/about/coc), hepimizin ve katıldığımız teknik toplulukların zenginleşmesini kolaylaştırmak için bir rehberdir.
 
-### Stay in the Know {#stay-in-the-know}
+### Haberdar Kalın {#stay-in-the-know}
 
-- Follow our [official Twitter account](https://twitter.com/vuejs).
-- Follow our [team members](./team) on Twitter or GitHub.
-- Follow the [RFC discussions](https://github.com/vuejs/rfcs).
-- Subscribe to the [official blog](https://blog.vuejs.org/).
+- [Resmi Twitter hesabımızı](https://twitter.com/vuejs) takip edin.
+- [Takım üyelerimizi](./team) Twitter veya GitHub'da takip edin.
+- [RFC tartışmalarını](https://github.com/vuejs/rfcs) takip edin.
+- [Resmi bloga](https://blog.vuejs.org/) abone olun.
 
-### Get Support {#get-support}
+### Destek Alın {#get-support}
 
-- [Discord Chat](https://discord.com/invite/vue): A place for Vue devs to meet and chat in real time.
-- [Forum](https://forum.vuejs.org/): The best place to ask questions and get answers about Vue and its ecosystem.
-- [DEV Community](https://dev.to/t/vue): Share and discuss Vue related topics on Dev.to.
-- [Meetups](https://events.vuejs.org/meetups): Want to find local Vue enthusiasts like yourself? Interested in becoming a community leader? We have the help and support you need right here!
-- [GitHub](https://github.com/vuejs): If you have a bug to report or feature to request, that's what the GitHub issues are for. Please respect the rules specified in each repository's issue template.
-- [Twitter Community (unofficial)](https://twitter.com/i/communities/1516368750634840064): A Twitter community, where you can meet other Vue enthusiasts, get help, or just chat about Vue.
+- [Discord Sohbet](https://discord.com/invite/vue): Vue geliştiricilerinin bir araya gelip gerçek zamanlı sohbet edebileceği bir yer.
+- [Forum](https://forum.vuejs.org/): Vue ve ekosistemi hakkında soru sormak ve yanıt almak için en iyi yer.
+- [DEV Topluluğu](https://dev.to/t/vue): Dev.to üzerinde Vue ile ilgili konuları paylaşın ve tartışın.
+- [Buluşmalar](https://events.vuejs.org/meetups): Sizin gibi yerel Vue meraklılarını mı bulmak istiyorsunuz? Topluluk lideri mi olmak istiyorsunuz? İhtiyacınız olan yardım ve desteği burada bulabilirsiniz!
+- [GitHub](https://github.com/vuejs): Bildirilecek bir hata veya istenecek bir özellik varsa, GitHub sorunları bunun için. Lütfen her deponun sorun şablonunda belirtilen kurallara saygı gösterin.
+- [Twitter Topluluğu (resmi olmayan)](https://twitter.com/i/communities/1516368750634840064): Diğer Vue meraklılarıyla tanışabileceğiniz, yardım alabileceğiniz veya sadece Vue hakkında sohbet edebileceğiniz bir Twitter topluluğu.
 
-### Explore the Ecosystem {#explore-the-ecosystem}
+### Ekosistemi Keşfedin {#explore-the-ecosystem}
 
-- [The Awesome Vue Page](https://github.com/vuejs/awesome-vue): See what other awesome resources have been published by other awesome people.
-- [Vue Telescope Explorer](https://vuetelescope.com/explore): Explore websites made with Vue, with insights on what framework / libraries they use.
-- [Made with Vue.js](https://madewithvuejs.com/): showcases of projects and libraries made with Vue.
-- [The "Show and Tell" Subforum](https://github.com/vuejs/core/discussions/categories/show-and-tell): Another great place to check out what others have built with and for the growing Vue ecosystem.
+- [Muhteşem Vue Sayfası](https://github.com/vuejs/awesome-vue): Diğer harika insanların yayınladığı diğer harika kaynakları görün.
+- [Vue Teleskopu Kaşifi](https://vuetelescope.com/explore): Vue ile yapılmış web sitelerini, kullandıkları framework / kütüphaneler hakkında içgörülerle keşfedin.
+- [Vue.js ile Yapılmış](https://madewithvuejs.com/): Vue ile yapılmış projelerin ve kütüphanelerin vitrinleri.
+- ["Göster ve Anlat" Alt Forum](https://github.com/vuejs/core/discussions/categories/show-and-tell): Büyüyen Vue ekosistemiyle ve için neler inşa edildiğini görmek için başka harika bir yer.
 
-## What You Can Do {#what-you-can-do}
+## Neler Yapabilirsiniz {#what-you-can-do}
 
-### Help Fellow Users {#help-fellow-users}
+### Diğer Kullanıcılara Yardım Edin {#help-fellow-users}
 
-Code contribution is not the only form of contribution to the Vue community. Answering a question for a fellow Vue user on Discord or the forum is also considered a valuable contribution.
+Kod katkısı, Vue topluluğuna katkıda bulunmanın tek yolu değildir. Discord veya forumda bir Vue kullanıcısının sorusunu yanıtlamak da değerli bir katkı olarak kabul edilir.
 
-### Help Triage Issues {#help-triage-issues}
+### Sorunları Üçleme Yardım Edin {#help-triage-issues}
 
-Triaging an issue means gathering missing information, running the reproduction, verifying the issue's validity, and investigating the cause of the issue.
+Bir sorunu üçlemek, eksik bilgileri toplamak, üremeyi çalıştırmak, sorunun geçerliliğini doğrulamak ve sorunun nedenini araştırmak anlamına gelir.
 
-We receive many issues in [our repositories on GitHub](https://github.com/vuejs) every single day. Our bandwidth is limited compared to the amount of users we have, so issue triaging alone can take an enormous amount of effort from the team. By helping us triage the issues, you are helping us become more efficient, allowing us to spend time on higher priority work.
+[GitHub'daki depolarımızda](https://github.com/vuejs) her gün birçok sorun alıyoruz. Kullanıcı sayımıza kıyasla bant genişliğimiz sınırlı, bu yüzden sorun üçleme işi bile ekibimizden büyük bir çaba gerektirebilir. Sorunları üçlemeye yardımcı olarak, daha verimli olmamıza yardımcı oluyorsunuz, böylece daha yüksek öncelikli işlere zaman ayırabiliyoruz.
 
-You don't have to triage an issue with the goal of fixing it (although that would be nice too). Sharing the result of your investigation, for example the commit that led to the bug, can already save us a ton of time.
+Bir sorunu düzeltme amacıyla üçlemek zorunda değilsiniz (bu da hoş olurdu). Örneğin, hataya neden olan taahhüdü paylaşmak gibi araştırmanızın sonucunu paylaşmak bile bize tonlarca zaman kazandırabilir.
 
-### Contribute Code {#contribute-code}
+### Kod Katkısında Bulunun {#contribute-code}
 
-Contributing bug fixes or new features is the most direct form of contribution you can make.
+Hata düzeltmeleri veya yeni özellikler eklemek, yapabileceğiniz en doğrudan katkı şeklidir.
 
-The Vue core repository provides a [contributing guide](https://github.com/vuejs/core/blob/main/.github/contributing.md), which contains pull request guidelines and information regarding build setup and high-level architecture. Other sub-project repositories may also contain its own contribution guide - please make sure to read them before submitting pull requests.
+Vue çekirdek deposu, pull request yönergeleri ve build kurulumu ve yüksek düzeyde mimari ile ilgili bilgileri içeren bir [katkı rehberi](https://github.com/vuejs/core/blob/main/.github/contributing.md) sağlar. Diğer alt proje depoları da kendi katkı rehberlerini içerebilir - lütfen pull request göndermeden önce bunları okuduğunuzdan emin olun.
 
-Bug fixes are welcome at any time. For new features, it is best to discuss the use case and implementation details first in the [RFC repo](https://github.com/vuejs/rfcs/discussions).
+Hata düzeltmeleri her zaman memnuniyetle karşılanır. Yeni özellikler için, önce [RFC deposunda](https://github.com/vuejs/rfcs/discussions) kullanım durumu ve uygulama ayrıntılarını tartışmak en iyisidir.
 
-### Share (and Build) Your Experience {#share-and-build-your-experience}
+### Deneyiminizi Paylaşın (ve Geliştirin) {#share-and-build-your-experience}
 
-Apart from answering questions and sharing resources in the forum and chat, there are a few other less obvious ways to share and expand what you know:
+Soruları yanıtlamanın ve forumda ve sohbette kaynakları paylaşmanın yanı sıra, bildiklerinizi paylaşmanın ve genişletmenin birkaç başka, daha az belirgin yolu vardır:
 
-- **Develop learning materials.** It's often said that the best way to learn is to teach. If there's something interesting you're doing with Vue, strengthen your expertise by writing a blog post, developing a workshop, or even publishing a gist that you share on social media.
-- **Watch a repo you care about.** This will send you notifications whenever there's activity in that repository, giving you insider knowledge about ongoing discussions and upcoming features. It's a fantastic way to build expertise so that you're eventually able to help address issues and pull requests.
+- **Öğrenme materyalleri geliştirin.** Sık sık en iyi öğrenme yolunun öğretmek olduğu söylenir. Vue ile ilginç bir şey yapıyorsanız, bir blog yazısı yazarak, bir atölye çalışması geliştirerek veya sosyal medyada paylaştığınız bir gist yayınlayarak uzmanlığınızı güçlendirin.
+- **İlgilendiğiniz bir depoyu izleyin.** Bu, o depoda etkinlik olduğunda size bildirim gönderir, devam eden tartışmalar ve gelecek özellikler hakkında iç bilgi sağlar. Uzmanlık oluşturmak ve nihayetinde sorunları ve pull request'leri ele almaya yardımcı olmak için harika bir yoldur.
 
-### Translate Docs {#translate-docs}
+### Belgeleri Çevirin {#translate-docs}
 
-I hope that right now, you're reading this sentence in your preferred language. If not, would you like to help us get there?
+Umarım şu anda bu cümleyi tercih ettiğiniz dilde okuyorsunuzdur. Eğer değilse, bu konuda bize yardım etmek ister misiniz?
 
-See the [Translations guide](/translations/) for more details on how you can get involved.
+Daha fazla ayrıntı için [Çeviri rehberine](/translations/) bakın.
 
-### Become a Community Leader {#become-a-community-leader}
+### Topluluk Lideri Olun {#become-a-community-leader}
 
-There's a lot you can do to help Vue grow in your community:
+Topluluğunuzda Vue'nun büyümesine yardımcı olmak için yapabileceğiniz çok şey var:
 
-- **Present at your local meetup.** Whether it's giving a talk or running a workshop, you can bring a lot of value to your community by helping both new and experienced Vue developers continue to grow.
-- **Start your own meetup.** If there's not already a Vue meetup in your area, you can start your own! Use the [resources at events.vuejs.org](https://events.vuejs.org/resources/#getting-started) to help you succeed!
-- **Help meetup organizers.** There can never be too much help when it comes to running an event, so offer a hand to help out local organizers to help make every event a success.
+- **Yerel buluşmanızda sunum yapın.** İster bir konuşma yapın ister bir atölye çalışması yönetin, topluluğunuza hem yeni hem de deneyimli Vue geliştiricilerinin büyümeye devam etmesine yardımcı olarak büyük bir değer katabilirsiniz.
+- **Kendi buluşmanızı başlatın.** Eğer bölgenizde henüz bir Vue buluşması yoksa, kendi buluşmanızı başlatabilirsiniz! Başarılı olmanıza yardımcı olacak [events.vuejs.org'daki kaynakları](https://events.vuejs.org/resources/#getting-started) kullanın!
+- **Buluşma organizatörlerine yardım edin.** Bir etkinlik düzenlemek konusunda asla fazla yardım olamaz, bu yüzden yerel organizatörlere yardım eli uzatarak her etkinliğin başarılı olmasına yardımcı olun.
 
-If you have any questions on how you can get more involved with your local Vue community, reach out on Twitter at [@vuejs_events](https://www.twitter.com/vuejs_events)!
+Yerel Vue topluluğunuzla nasıl daha fazla ilgilenebileceğiniz hakkında herhangi bir sorunuz varsa, Twitter'da [@vuejs_events](https://www.twitter.com/vuejs_events) ile iletişime geçin!
